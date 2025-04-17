@@ -1,0 +1,71 @@
+﻿@model List<ConsultationModel>
+
+
+<table style="width: 100%;">
+    <tr>
+        <th style="width: 0%;">Id</th>
+        <th style="width: 0%;">Name</th>
+        <th style="width: 0%;">Email</th>
+        <th style="width: 0%;">Topic</th>
+        <th style="width: 0%;">Message</th>
+        <th style="width: 0%;">Action</th>
+    </tr>
+    
+    @foreach (var consultationModel in Model)
+    {
+        <tr>
+            <td>@consultationModel.RequestId</td>
+            <td>@consultationModel.Name</td>
+            <td>@consultationModel.Email</td>
+            <td>@consultationModel.Topic</td>
+            <td>@consultationModel.Message</td>
+            <td>
+                <button onclick="requestComplete(@consultationModel.RequestId)"style="background:transparent;border:none;">Completed</button>
+            </td>
+            <td>
+                <button onclick="requestDelete(@consultationModel.RequestId)" style="background:transparent;border:none;">Delete</button>
+            </td>
+        </tr>
+    }
+</table>
+<script>
+
+    async function requestComplete(RequestId) {
+        console.log(RequestId)
+        
+        var formData = new FormData();
+        formData.append("RequestId", RequestId);
+
+        var response = await fetch("http://localhost:5293/Home/RequestComplete", {
+            method: "POST",
+            body: formData,
+
+        });
+        if (response.ok == true) {
+           location.reload();
+        }
+        else {
+            alert("Something went wrong!");
+        }
+    }
+
+    async function requestDelete(RequestId) {
+        console.log(RequestId)
+
+
+        var formData = new FormData();
+        formData.append("RequestId", RequestId);
+
+        var response = await fetch("http://localhost:5293/Home/RequestDelete", {
+            method: "POST",
+            body: formData,
+        });
+
+        if (response.ok == true) {
+            location.reload()
+        }
+        else {
+            alert("Something went wrong!");
+        }
+    }
+</script>

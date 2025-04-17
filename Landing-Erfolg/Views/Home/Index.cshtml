@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="erfolg">
+	<div class="Backgroundimg">
+		<img src="~/Content/img/Man-on-Mountain.jpg" />
+		@* <img src="Content/img/slider/img_lights_wide.jpg" /> *@
+	</div>
+	<div class="erfolg-content1" style="text-align:center;">
+		<h4 style="color:black;font-weight:100">Ehrgeiz ist der erste Schritt zum</h4>
+	</div>
+	<div class="erfolg-content2" style="text-align:center;">
+		<h1 id="haupt-titel" style="color:black;font-weight:800" ;>ERFOLG</h1>
+	</div>
+	<div class="erfolg-content3" style="text-align:center;">
+		<button class="Main-Button" style="margin-left:750px;font">
+			Jetzt buchen
+		</button>
+	</div>
+</div>
+<div id="about-me" class="about-me">
+	<div class="about-me-background">
+		<div style="background:white;"></div>
+		<div>
+			<img src="~/Content/img/man.jpg" />
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="about-me-content">
+			<div>
+				<h1 style="color:black;">__</h1>
+				<h1 style="color: black; font-size: 45px; padding-right: 140px; font-weight: 800;">ÜBER MICH</h1>
+
+				<p style="color: black; line-height: 1.7em; font-size: 16px;margin-top:40px;">
+					Ich bin ein Textabschnitt. Klicken Sie einfach auf „Text bearbeiten“ oder doppelklicken Sie, um Ihren eigenen Inhalt hinzuzufügen und die Fonts zu ändern. Ziehen Sie mich an die gewünschte Stelle auf Ihrer Seite.
+				</p>
+				<p style=" color: black; line-height: 1.7em; font-size: 16px; font-weight: 50; margin-top: 40px; margin-bottom: 63px;">
+					Schreiben Sie hier etwas ausführlicher über Ihr Unternehmen und Ihr Dienstleistungsangebot. Erzählen Sie etwas über Ihr Team und welche Arten von Leistungen Sie anbieten.
+				</p>
+				<button class="Main-Button" style="width: 150px; position: relative; margin-bottom: 40px;">
+					Mehr erfahren
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="help" class="help">
+	<div class="ImageCoaching">
+		<img src="~/Content/img/1503297.jpg" />
+	</div>
+	<div class="container">
+		<h1 style="color: black; margin-top: 100px;">__</h1>
+		<h1 style="color: black; font-size: 45px; padding-right: 480px; font-weight: 800;">DABEI KANN ICH HELFEN</h1>
+		<div class="Einzelcoaching">
+			<h1 style="color: black; font-size: 24px; margin-left: 249px; margin-top: 58px; font-weight: 800;">EINZELCOACHING</h1>
+			<p style="color: black; margin-left: 249px;font-size:14px;">Ich bin ein Slogan. Klicken Sie hier, um mich zu bearbeiten.</p>
+			<p style="color: black; margin-left: 249px;font-size:14px; ">1 Std.</p>
+			<p style="color: black; margin-left: 249px;font-size:14px; ">70 €</p>
+		</div>
+		<button class="Main-Button" style="width:250px;position:relative;margin: 40px 0px 50px 38%;">
+			Weitere Dienstleistungen
+		</button>
+	</div>
+</div>
+
+
+
+<div class="Slideshow">
+	<div class="Mainbody" style=" width: 100%; display: flex; background-color: white;">
+		<button onclick="prevSlide()" style="width:5%; background-color:grey;"><</button>
+		<div class="IMG" style=" width: 90%; border: solid; border-color: black;">
+			<img src="~/Content/img/slider/img_lights_wide.jpg" style="width:100%;position:relative;display:block;" />
+			<img src="~/Content/img/slider/img_mountains_wide.jpg" style="width:100%;position:relative;display:none;" />
+			<img src="~/Content/img/slider/img_nature_wide.jpg" style="width:100%;position:relative;display:none;" />
+			<img src="~/Content/img/slider/img_snow_wide.jpg" style="width:100%;position:relative;display:none;" />
+		</div>
+		<button onclick="nextSlide()" style="width:5%; background-color:grey;">></button>
+	</div>
+	<div class="Buttons">
+		<button onclick="checkSlide(0)" class="active-button"></button>
+		<button onclick="checkSlide(1)"></button>
+		<button onclick="checkSlide(2)"></button>
+		<button onclick="checkSlide(3)"></button>
+	</div>
+</div>
+

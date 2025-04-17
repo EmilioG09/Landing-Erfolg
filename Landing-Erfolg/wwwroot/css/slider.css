@@ -1,0 +1,35 @@
+.body{
+    display:relative;
+}
+.Mainbody {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+.IMG {
+    width: 90%;
+    border: solid;
+    border-color: black;
+}
+.Buttons {
+    display: flex !important;
+    background-color: white;
+    gap: 15px;
+    padding-top: 10px;
+    justify-content:center;
+}
+.Buttons button {
+    border: none;
+    border-radius: 100%;
+    background: grey;
+    padding: 7px;
+}
+.Buttons button:hover {
+    background-color: black !important ;
+    cursor: pointer;
+
+}
+.active-button {
+    background: black !important;
+}
+    

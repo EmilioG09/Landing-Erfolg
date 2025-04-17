@@ -1,0 +1,293 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+.Main-Button {
+	transition: all .4s ease;
+	cursor: pointer;
+	background-color: black;
+	width: 150px;
+	position: absolute;
+	color: white;
+	border: solid;
+	border-color: black;
+	height: 30px;
+	display: inherit;
+	text-align: center;
+	font-size:16px;
+}
+.Main-Button:hover {
+	color: black !important;
+	background-color: transparent;	
+}
+.container {
+	position: relative;
+    width: 900px;
+    /*background: gray;*/
+    margin: 0 auto;
+    /*margin-top: 10px;*/
+}
+
+.header-content {
+	display:flex; 
+	justify-content: space-between;
+	height: 100%;
+	padding: 8px 0;
+}
+.header-content .navi {
+	display:flex;
+	align-items: center;
+}
+.header-content .navi a {
+	cursor: pointer;
+	padding: 7px 10px;
+	font-size: 17px;
+	transition: all .4s ease;
+}
+
+/*.header-content .navi a:first-child, .header-content .navi a:last-child{
+	color: #1bbfa2 !important;
+}*/
+
+/*.header-content .navi a:hover {
+	color: #1bbfa2 !important;
+	cursor: pointer;
+}*/
+
+.erfolg {
+	height: 761px;
+	overflow: hidden;
+	position: relative;
+}
+.erfolg-content1{
+	position:relative;
+	margin-top: 135px;
+	justify-content:space-between;
+	padding:8px 0;
+	background:transparent;
+	line-height: 1em;
+    text-align: center;
+    font-size: 17px;
+	letter-spacing: normal;
+	font-family:lulo-clean-w01-one-bold, sans-serif;
+}
+.erfolg-content2{
+	position:relative;
+	justify-content:space-between;
+	padding:8px 0;
+	background:transparent;
+	line-height: 1em;
+    text-align: center;
+	letter-spacing: 20px;
+	font-family:Arial,Black;
+}
+.erfolg-content2 h1 {
+	font-size: 140px;
+    position: relative;
+    margin-top: 50px;
+}
+.erfolg-content3{
+	position:relative;
+	justify-content:space-between;
+	background-color:black;
+	line-height: 1em;
+    font-size:18px;
+	letter-spacing: normal;
+	transition: all .4s ease;
+}
+.Backgroundimg {
+	position:absolute;
+	background-image: url('Man on Mountain.avif');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.Backgroundimg img {
+	width: 100%;
+}
+.about-me {
+	position: relative;
+}
+.about-me-background{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	display: flex;
+}
+.about-me-background div {
+	width: 50%;	
+}
+
+.about-me-content {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.about-me-content div {
+	width: 40%;	
+}
+.Einzelcoaching {
+	width:940px;
+	height:245px;
+	border:solid;
+	border-color: black;
+	border-width: 6px;
+}
+
+.ImageCoaching {
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.help {
+	overflow:hidden;
+	position:relative;
+}
+.blauerHintergrund1 {
+	height: 600px;
+	width: 50%;
+}
+.Bildchen img {
+	cursor: pointer;		
+	margin-top:30px;
+	width:30px;
+}
+.blauerHintergrund2 {
+	height: 600px;
+	width: 50%;
+}
+.Textfeld input {
+	height: 35px;
+	width: 450px;
+	background-color: #4dbdbd;
+	border: solid;
+}
+.tabs {
+	position:relative;
+	background-color:white;
+}
+.main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	display:flex;
+}
+.left-side {
+	background-color: lightgray;
+	width: 25%;
+	height: 500px;
+	position: relative;	
+	box-sizing:border-box;
+}
+.right-side {
+	background-color: gray;
+	width: 75%;
+	height: 500px;	
+}
+.UI-Design {
+	font-size: 30px;
+	padding:6px 9px;
+	display:block;
+	margin:5px 0px;
+	cursor:pointer;
+}
+.services {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color: white;
+	font-size: 20px;
+	gap:15px
+	
+}
+
+.service {
+	height: 200px;
+	background: black;
+	width: 100%;
+	cursor: pointer;
+	padding: 4px 0px;
+	border-radius: 20px;
+	overflow:hidden;
+}
+.footer {
+	display:flex;
+
+}
+.contact {
+	background-color: #4dbdbd;
+}
+
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.modal .fade {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.4;
+}
+.modal .dialog {
+	z-index: 2;
+	width: 40%;
+	height: 350px;
+	background: white;
+}
+
+form .errors div{
+	display: none;
+	padding-top: 5px;
+	color: red;
+}
+.Dialog-Text {
+	text-align: center;
+	font-size: 62px;
+	padding-top: 35px;
+}
+.Button-X {
+	margin-left: 95%;
+	margin-top: 14px;
+}
+.Button-OK {
+	margin-left: 46%;
+	margin-top: 54px;
+	font-size: 27px;
+	padding: 3px 15px;
+}
+.dialog {
+	border: solid;
+	border-color: dimgray;
+	border-width: 6px;
+}
+.BigText‹berschrift {
+	font-size:40px;
+	padding: 30px;
+}
+.BigText {
+	padding:10px;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
