@@ -46,6 +46,13 @@ namespace Landing_Erfolg.Controllers
             return View(userList);
         }
 
+        public IActionResult Slideshow()
+        {
+            List<string> slides = _repository.GetSlides();
+
+            return View(slides);
+        }
+
         private List<ConsultationModel> GetDataFromFolder()
         {
             string directoryPath = "Requests";

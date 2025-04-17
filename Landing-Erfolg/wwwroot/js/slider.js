@@ -3,11 +3,10 @@ var curSlide = 0;
 var elements = document.querySelectorAll(".IMG img")
 var Slides = elements.length;
 var buttons = document.querySelectorAll(".Buttons button")
-
-
+checkSlide(0)
 function prevSlide() {
     if (curSlide == 0) {
-        curSlide = 3
+        curSlide = Slides - 1
     }
     else {
         curSlide = curSlide - 1
@@ -17,7 +16,7 @@ function prevSlide() {
 }
 
 function nextSlide() {
-    if (curSlide == 3) {
+    if (curSlide == Slides - 1) {
         curSlide = 0
     }
     else {

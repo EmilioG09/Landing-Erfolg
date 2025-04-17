@@ -86,6 +86,34 @@ namespace Landing_Erfolg.Repositories
                 }
             }
         }
+
+        public List<string> GetSlides()
+        {
+            List<string> slides = new List<string>();
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM slideshow;";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string path = reader["path"].ToString();
+
+                            slides.Add(path);
+                        }
+                    }
+                }
+            }
+
+            return slides;
+        }    
+
     }
 
 

@@ -1,0 +1,20 @@
+﻿@model List<string>
+
+<div class="Slideshow">
+	<div class="Mainbody" style=" width: 100%; display: flex; background-color: white;">
+		<button onclick="prevSlide()" style="width:5%; background-color:grey;"><</button>
+		<div class="IMG" style=" width: 90%; border: solid; border-color: black;">
+			@foreach (string slide in Model)
+			{
+				<img src="@slide" style="width:100%;position:relative;display:none;" />
+			}
+		</div>
+		<button onclick="nextSlide()" style="width:5%; background-color:grey;">></button>
+	</div>
+	<div class="Buttons">
+		@foreach (var item in Model.Select((slide, i) => new { slide, i }))
+		{
+			<button onclick="checkSlide(@item.i)"></button>
+		}
+	</div>
+</div>
