@@ -14,7 +14,9 @@ Datenbank:
 2. SQL Server Management Studio (SSMS): https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms
 
 3. Create a Database:
+
   3.1) Create a new Database "test"
+
   3.2) Create a consultations table:
    
      CREATE TABLE consultations (
