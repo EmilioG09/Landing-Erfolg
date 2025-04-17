@@ -20,7 +20,8 @@ Installation Guide:
   3.1) Create a new Database "test"
 
   3.2) Create a consultations table:
-   
+      
+     # code to create a consultation table
      CREATE TABLE consultations (
        request_id INT INDETITY(1,1) PRIMARY KEY,
        name varchar(50) NULL,
@@ -29,6 +30,12 @@ Installation Guide:
        message text NULL,
        Status BIT NOT NULL DEFAULT 0  
      );
+
+    # code to create a slideshow table
+    CREATE TABLE slideshow (
+    	slide_id INT IDENTITY(1,1) PRIMARY KEY,
+    	path varchar(250) NOT NULL
+    );
 
 4. Configure the Projekt:
   - Open ./appsettings.json and put the correct names into ConnectionString 
