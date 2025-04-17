@@ -72,25 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-	// Tabulation
-	//document.getElementById("show-design-tab").addEventListener("click", function () {
-	//	var design_services = document.getElementById("design-services");
-	//	var dev_services = document.getElementById("dev-services");
-
-	//	dev_services.style.display = "none"
-
-	//	design_services.style.display = "grid"
-
-	//})
-	//document.getElementById("show-dev-tab").addEventListener("click", function () {
-	//	var design_services = document.getElementById("design-services");
-	//	var dev_services = document.getElementById("dev-services");
-
-	//	dev_services.style.display = "grid"
-
-	//	design_services.style.display = "none"
-	//});
-
+	
 	// Form validation
 	document.getElementById("contact-form").addEventListener("submit", formValidation);
 });
